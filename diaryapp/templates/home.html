@@ -1,0 +1,7 @@
+
+{% for storydiary in storydiarys.all%}
+<h1>제목 : {{storydiary.title}}</h1>
+<p>날짜 : {{storydiary.pub_date}}</p>
+<p>본문 미리보기 : {{storydiary.summary}}<a href ="{%url 'detail storydiary.id%'}">...more</a></p>
+<br><br>
+{% endfor %}
